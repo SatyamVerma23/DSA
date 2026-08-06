@@ -11,7 +11,7 @@ int main()
     {
         int ci=arr[i]-1;
         if(arr[i]==arr[ci]) i++;
-        else if(arr[i]==i+1)
+        else if(arr[i]==i+1 || ci==i)
         {
             i++;
         }
