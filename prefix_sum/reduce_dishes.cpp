@@ -16,21 +16,18 @@ int main()
     int idx=-1;
     for (int i=0;i<n;i++)
     {
-        if(suffixarray[i]>0) 
+        if(suffixarray[i]>=0) 
         {
             idx=i;
             break;
         }
     }
     int ans=0;
-    int nw[n-idx];
-    for (int i=0;i<n-idx;i++)
+    int x=1;
+    for (int i=idx;i<n;i++)
     {
-        nw[i]=arr[i+idx];
-    }
-    for (int i=0;i<n-idx;i++)
-    {
-        ans=ans+nw[i]*(i+1);
+        ans=ans+arr[i]*x;
+        x++;
     }
     cout<<"your final ans is "<<ans;
     return 0;
