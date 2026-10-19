@@ -91,7 +91,7 @@ class DLL
 int main()
 {
     DLL list;
-    list.insert_at_tail(10); //list me jaa kr insert_at_tail finction chlao
+    list.insert_at_tail(10); //how to read --> list me jaa kr insert_at_tail finction chlao
     list.insert_at_tail(20);
     list.insert_at_tail(30);
     list.insert_at_tail(40);
